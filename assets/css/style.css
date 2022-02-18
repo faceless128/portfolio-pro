@@ -68,3 +68,10 @@ header nav ul li {
     margin-left: 14px;
     margin-right: 14px;
 }
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: 50%;
+}
