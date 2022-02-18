@@ -1,0 +1,70 @@
+/* remove all margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first-color: #c5c3c6;
+    --second-color: #1985a1;
+    --third-color: #4c5c68;
+}
+
+/* style for body */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+/* style for header */
+header {
+    background-color: var(--first-color);
+    display: inline-block;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* style for header h1 */
+header h1 {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 14px;
+    display: inline-block;
+
+}
+
+/* style for nav */
+header nav {
+    padding: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* style for links in nav */
+header nav a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
+/* style for nav ul */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }  
+
+/* style for nav list items */
+header nav ul li {
+    margin-left: 14px;
+    margin-right: 14px;
+}
