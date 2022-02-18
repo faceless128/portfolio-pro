@@ -32,6 +32,7 @@ header h1 {
     background-color: var(--second-color);
     color: var(--first-color);
     padding: 14px;
+    font-size: 36px;
     display: inline-block;
 
 }
@@ -39,7 +40,7 @@ header h1 {
 /* style for nav */
 header nav {
     padding: 18px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -65,8 +66,8 @@ header nav ul {
 
 /* style for nav list items */
 header nav ul li {
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .hero {
@@ -74,4 +75,58 @@ header nav ul li {
     height: 300px;
     background-size: cover;
     background-position: 50%;
+}
+
+.about {
+    background-color: var(--first-color);
+    color: var(--third-color);
+    display: flex;
+    padding: 40px 0;
+}
+
+.about h2 {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 14px;
+    font-size: 32px;
+    width: 200px;
+}
+
+.about div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.about div:last-child {
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h3 {
+    padding: 10px;
+}
+
+
+/* media query for smaller screens */
+@media screen and (max-width: 980px) {
+    .about {
+        flex-wrap: wrap;
+    }
+    header nav ul {
+        justify-content: center;
+    }
+    .faceless-subway {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faceless-subway {
+        width: 160px;
+        height: 160px;
+    }
 }
