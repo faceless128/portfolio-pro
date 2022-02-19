@@ -1,14 +1,16 @@
+/* main color variables */
+:root {
+    --first-color: #c5c3c6;
+    --second-color: #1985a1;
+    --third-color: #4c5c68;
+}
+
 /* remove all margins and padding */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-:root {
-    --first-color: #c5c3c6;
-    --second-color: #1985a1;
-    --third-color: #4c5c68;
+    background-color: var(--first-color);
 }
 
 /* style for body */
@@ -19,7 +21,6 @@ body {
 
 /* style for header */
 header {
-    background-color: var(--first-color);
     display: inline-block;
     padding: 14px 0;
     display: flex;
@@ -70,6 +71,7 @@ header nav ul li {
     margin-right: 18px;
 }
 
+/* style for hero */
 .hero {
     background-image: url("../images/hero.jpg");
     height: 300px;
@@ -77,8 +79,8 @@ header nav ul li {
     background-position: 50%;
 }
 
+/* style for about section */
 .about {
-    background-color: var(--first-color);
     color: var(--third-color);
     display: flex;
     padding: 40px 0;
@@ -109,8 +111,62 @@ header nav ul li {
     padding: 10px;
 }
 
+/* style for work section */
 
-/* media query for smaller screens */
+.work {
+    display: flex;
+}
+
+.work h2 {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 14px;
+    font-size: 32px;
+    width: 200px;
+    margin-top: 300px;
+}
+
+.projects {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* style for project images */
+.big-project {
+    flex-basis: 90%;
+    padding: 20px;
+}
+
+.small-project {
+    flex-basis: 45%;
+    padding: 20px;
+}
+
+.big-project img {
+    opacity: 0.7;
+    border: 5px solid var(--third-color);
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 500px;
+    min-height: 250px;
+}
+.small-project img {
+    opacity: 0.7;
+    border: 5px solid var(--third-color);
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 240px;
+    min-height: 120px;
+}
+
+.big-project img:hover, .small-project img:hover {
+    opacity: 1;
+    border: 5px solid var(--second-color);
+}
+
+
+/* media query style changes for smaller screens */
 @media screen and (max-width: 980px) {
     .about {
         flex-wrap: wrap;
@@ -118,15 +174,41 @@ header nav ul li {
     header nav ul {
         justify-content: center;
     }
+    .hero {
+        height: 200px;
+    }
     .faceless-subway {
         width: 200px;
         height: 200px;
     }
+    .work {
+        flex-wrap: wrap;
+    }
+    .work h2 {
+        margin-top: 30px;
+    }
+    .projects {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        height: 100px;
+    }
     .faceless-subway {
         width: 160px;
         height: 160px;
+    }
+    .projects {
+        margin: 0;
+    }
+    .big-project img {
+        min-width: 240px;
+        min-height: 120px;
+    }
+    .small-project {
+        flex-basis: 90%;
     }
 }
