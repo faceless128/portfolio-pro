@@ -21,7 +21,6 @@ body {
 
 /* style for header */
 header {
-    display: inline-block;
     padding: 14px 0;
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,6 @@ header h1 {
     color: var(--first-color);
     padding: 14px;
     font-size: 36px;
-    display: inline-block;
 
 }
 
@@ -79,19 +77,20 @@ header nav ul li {
     background-position: 50%;
 }
 
-/* style for about section */
-.about {
-    color: var(--third-color);
-    display: flex;
-    padding: 40px 0;
-}
-
-.about h2 {
+/* style for 2 */
+h2 {
     background-color: var(--second-color);
     color: var(--first-color);
     padding: 14px;
     font-size: 32px;
     width: 200px;
+}
+
+/* style for about section */
+.about {
+    color: var(--third-color);
+    display: flex;
+    padding: 40px 0;
 }
 
 .about div {
@@ -112,17 +111,11 @@ header nav ul li {
 }
 
 /* style for work section */
-
 .work {
     display: flex;
 }
 
 .work h2 {
-    background-color: var(--second-color);
-    color: var(--first-color);
-    padding: 14px;
-    font-size: 32px;
-    width: 200px;
     margin-top: 300px;
 }
 
@@ -165,6 +158,42 @@ header nav ul li {
     border: 5px solid var(--second-color);
 }
 
+.contact {
+    display: flex;
+    padding: 18px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.contact ul li {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+
+.contact h3 {
+    color: var(--second-color);
+}
+
+/* style for links in nav */
+.contact a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
 
 /* media query style changes for smaller screens */
 @media screen and (max-width: 980px) {
@@ -191,9 +220,15 @@ header nav ul li {
         justify-content: center;
         align-items: center;
     }
+    .contact {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    header nav ul li {
+        justify-content: space-evenly;
+    }
     .hero {
         height: 100px;
     }
@@ -210,5 +245,8 @@ header nav ul li {
     }
     .small-project {
         flex-basis: 90%;
+    }
+    .contact ul {
+        justify-content: space-evenly;
     }
 }
