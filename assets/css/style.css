@@ -110,6 +110,14 @@ h2 {
     padding: 10px;
 }
 
+.about-text {
+    margin-right: 100px;
+}
+
+.faceless-subway {
+    margin-left: 120px;
+}
+
 /* style for work section */
 .work {
     display: flex;
@@ -157,6 +165,47 @@ h2 {
     opacity: 1;
     border: 5px solid var(--second-color);
 }
+
+/* style for project labels */
+#run-buddy::after {
+    position: relative;
+    bottom: 80px;
+    left: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 22px;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    padding: 15px 10px;
+    content: "Run Buddy 2.0";
+}
+
+#horiseon::after {
+    position: relative;
+    bottom: 65px;
+    left: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    padding: 15px 10px;
+    content: "Horiseon";
+}
+
+.placeholder::after {
+    position: relative;
+    bottom: 65px;
+    left: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    padding: 15px 10px;
+    content: "Placeholder";
+}
+
 
 .contact {
     display: flex;
@@ -210,6 +259,10 @@ h2 {
         width: 200px;
         height: 200px;
     }
+    .about-text {
+        margin-right: 40px;
+        margin-left: 40px;
+    }    
     .work {
         flex-wrap: wrap;
     }
@@ -245,6 +298,10 @@ h2 {
     }
     .small-project {
         flex-basis: 90%;
+    }
+    #run-buddy::after {
+        bottom: 65px;
+        font-size: 18px;
     }
     .contact ul {
         justify-content: space-evenly;
