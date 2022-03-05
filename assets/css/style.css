@@ -168,6 +168,22 @@ h2 {
 
 /* style for project labels */
 #run-buddy::after {
+    content: "Run Buddy 2.0";
+}
+
+#horiseon::after {
+    content: "Horiseon";
+}
+
+#password-generator::after {
+    content: "Password Generator";
+}
+
+#taskinator::after {
+    content: "Taskinator";
+}
+
+.big-project::after {
     position: relative;
     bottom: 80px;
     left: 5px;
@@ -177,10 +193,9 @@ h2 {
     background-color: var(--third-color);
     color: var(--first-color);
     padding: 15px 10px;
-    content: "Run Buddy 2.0";
 }
 
-#horiseon::after {
+.small-project::after {
     position: relative;
     bottom: 65px;
     left: 5px;
@@ -190,32 +205,9 @@ h2 {
     background-color: var(--third-color);
     color: var(--first-color);
     padding: 15px 10px;
-    content: "Horiseon";
-}
-
-#password-generator::after {
-    position: relative;
-    bottom: 65px;
-    left: 5px;
-    font-weight: bold;
-    text-align: left;
-    font-size: 18px;
-    background-color: var(--third-color);
-    color: var(--first-color);
-    padding: 15px 10px;
-    content: "Password Generator";
 }
 
 .placeholder::after {
-    position: relative;
-    bottom: 65px;
-    left: 5px;
-    font-weight: bold;
-    text-align: left;
-    font-size: 18px;
-    background-color: var(--third-color);
-    color: var(--first-color);
-    padding: 15px 10px;
     content: "Placeholder";
 }
 
@@ -272,9 +264,12 @@ h2 {
         width: 200px;
         height: 200px;
     }
+    .about div:last-child {
+        padding: 20px;
+    }
     .about-text {
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
     }    
     .work {
         flex-wrap: wrap;
@@ -302,6 +297,13 @@ h2 {
         width: 160px;
         height: 160px;
     }
+    .about div:last-child {
+        padding: 10px;
+    }
+    .about-text {
+        margin-right: 10px;
+        margin-left: 10px;
+    }    
     .projects {
         margin: 0;
     }
