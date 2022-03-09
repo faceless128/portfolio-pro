@@ -183,6 +183,10 @@ h2 {
     content: "Taskinator";
 }
 
+#code-quiz::after {
+    content: "Quiz Code";
+}
+
 .big-project::after {
     position: relative;
     bottom: 80px;
