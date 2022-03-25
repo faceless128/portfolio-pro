@@ -187,6 +187,18 @@ h2 {
     content: "Quiz Code";
 }
 
+#workday-scheduler::after {
+    content: "Work Day Scheduler";
+}
+
+#weather-dashboard::after {
+    content: "Weather Dashboard";
+}
+
+#shooting-star::after {
+    content: "Shooting Star";
+}
+
 .big-project::after {
     position: relative;
     bottom: 80px;
