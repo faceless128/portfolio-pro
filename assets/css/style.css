@@ -118,6 +118,10 @@ h2 {
     margin-left: 120px;
 }
 
+.headshot img {
+    border: 5px solid var(--second-color);
+}
+
 /* style for work section */
 .work {
     display: flex;
@@ -146,7 +150,7 @@ h2 {
 
 .big-project img {
     opacity: 0.7;
-    border: 5px solid var(--third-color);
+    border: 5px solid var(--second-color);
     max-width: 100%;
     max-height: 100%;
     min-width: 500px;
@@ -154,7 +158,7 @@ h2 {
 }
 .small-project img {
     opacity: 0.7;
-    border: 5px solid var(--third-color);
+    border: 5px solid var(--second-color);
     max-width: 100%;
     max-height: 100%;
     min-width: 240px;
@@ -163,7 +167,7 @@ h2 {
 
 .big-project img:hover, .small-project img:hover {
     opacity: 1;
-    border: 5px solid var(--second-color);
+    border: 5px solid var(--third-color);
 }
 
 /* style for project labels */
@@ -199,6 +203,14 @@ h2 {
     content: "Shooting Star";
 }
 
+#team-profile::after {
+    content: "Team Profile";
+}
+
+#employee-management::after {
+    content: "Employee Management";
+}
+
 .big-project::after {
     position: relative;
     bottom: 80px;
@@ -206,7 +218,7 @@ h2 {
     font-weight: bold;
     text-align: left;
     font-size: 22px;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: var(--first-color);
     padding: 15px 10px;
 }
@@ -218,15 +230,19 @@ h2 {
     font-weight: bold;
     text-align: left;
     font-size: 18px;
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     color: var(--first-color);
     padding: 15px 10px;
+}
+
+.small-project:hover::after, .big-project:hover::after {
+    background-color: var(--third-color);
+    color: var(--second-color);
 }
 
 .placeholder::after {
     content: "Placeholder";
 }
-
 
 .contact {
     display: flex;
