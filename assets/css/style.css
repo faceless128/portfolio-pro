@@ -204,11 +204,15 @@ h2 {
 }
 
 #team-profile::after {
-    content: "Team Profile";
+    content: "Team Profile Gen";
 }
 
 #employee-management::after {
     content: "Employee Management";
+}
+
+#tech-blog::after {
+    content: "Tech Blog";
 }
 
 .big-project::after {
