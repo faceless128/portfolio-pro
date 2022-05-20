@@ -215,6 +215,10 @@ h2 {
     content: "Tech Blog";
 }
 
+#it-takes-a-city::after {
+    content: "It Takes A City";
+}
+
 .big-project::after {
     position: relative;
     bottom: 80px;
