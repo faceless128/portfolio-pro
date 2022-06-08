@@ -219,6 +219,10 @@ h2 {
     content: "It Takes A City";
 }
 
+#thoughtful::after {
+    content: "Thoughtful";
+}
+
 .big-project::after {
     position: relative;
     bottom: 80px;
