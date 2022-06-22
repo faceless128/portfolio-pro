@@ -295,8 +295,14 @@ h2 {
 
 /* media query style changes for smaller screens */
 @media screen and (max-width: 980px) {
+    .header nav {
+        flex-wrap: wrap;
+    }
     .about {
         flex-wrap: wrap;
+    }
+    .about h2 {
+        margin-bottom: 20px;
     }
     header nav ul {
         justify-content: center;
@@ -307,6 +313,9 @@ h2 {
     .faceless-subway {
         width: 200px;
         height: 200px;
+        flex-wrap: wrap;
+        margin: 20px;
+        align-self: center;
     }
     .about div:last-child {
         padding: 20px;
