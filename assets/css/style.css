@@ -131,6 +131,10 @@ h2 {
     margin-top: 300px;
 }
 
+.work-text {
+    color: var(--third-color);
+}
+
 .projects {
     margin: 100px;
     display: flex;
@@ -223,7 +227,7 @@ h2 {
     content: "Thoughtful";
 }
 
-.big-project::after {
+.big-project div::after {
     position: relative;
     bottom: 80px;
     left: 5px;
@@ -235,7 +239,7 @@ h2 {
     padding: 15px 10px;
 }
 
-.small-project::after {
+.small-project div::after {
     position: relative;
     bottom: 65px;
     left: 5px;
@@ -247,7 +251,7 @@ h2 {
     padding: 15px 10px;
 }
 
-.small-project:hover::after, .big-project:hover::after {
+.small-project div:hover::after, .big-project div:hover::after {
     background-color: var(--third-color);
     color: var(--second-color);
 }
@@ -295,8 +299,14 @@ h2 {
 
 /* media query style changes for smaller screens */
 @media screen and (max-width: 980px) {
+    .header nav {
+        flex-wrap: wrap;
+    }
     .about {
         flex-wrap: wrap;
+    }
+    .about h2 {
+        margin-bottom: 20px;
     }
     header nav ul {
         justify-content: center;
@@ -307,6 +317,9 @@ h2 {
     .faceless-subway {
         width: 200px;
         height: 200px;
+        flex-wrap: wrap;
+        margin: 20px;
+        align-self: center;
     }
     .about div:last-child {
         padding: 20px;
