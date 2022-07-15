@@ -227,6 +227,14 @@ h2 {
     content: "Thoughtful";
 }
 
+#reactive-portfolio::after {
+    content: "I Made This";
+}
+
+#it-takes-a-city-too::after {
+    content: "It Takes A City Too";
+}
+
 .big-project div::after {
     position: relative;
     bottom: 80px;
