@@ -108,10 +108,14 @@ h2 {
 
 .about h3 {
     padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .about-text {
     margin-right: 100px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .faceless-subway {
@@ -132,6 +136,8 @@ h2 {
 }
 
 .work-text {
+    font-weight: bold;
+    font-size: 18px;
     color: var(--third-color);
 }
 
