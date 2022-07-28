@@ -21,10 +21,10 @@ body {
 
 /* style for header */
 header {
-    padding: 14px 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 18px 0;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 /* style for header h1 */
@@ -33,38 +33,32 @@ header h1 {
     color: var(--first-color);
     padding: 14px;
     font-size: 36px;
-
-}
-
-/* style for nav */
-header nav {
-    padding: 18px;
-    font-size: 28px;
-    font-weight: bold;
+    white-space: nowrap;
 }
 
 /* style for links in nav */
-header nav a {
+header a {
     color: var(--second-color);
     text-decoration: none;
 }
 
-header nav a:hover {
+header a:hover {
     color: var(--third-color);
     text-decoration: underline;
 }
 
 /* style for nav ul */
-header nav ul {
+header ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
   }  
 
 /* style for nav list items */
-header nav ul li {
+header ul li {
     margin-left: 18px;
     margin-right: 18px;
 }
@@ -313,7 +307,7 @@ h2 {
 
 /* media query style changes for smaller screens */
 @media screen and (max-width: 980px) {
-    .header nav {
+    header {
         flex-wrap: wrap;
     }
     .about {
@@ -322,7 +316,7 @@ h2 {
     .about h2 {
         margin-bottom: 20px;
     }
-    header nav ul {
+    header ul {
         justify-content: center;
     }
     .hero {
@@ -358,7 +352,7 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    header nav ul li {
+    header ul li {
         justify-content: space-evenly;
     }
     .hero {
