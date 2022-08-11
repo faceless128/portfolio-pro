@@ -7,14 +7,14 @@ Portfolio Pro is a ligntwight Professional Portfolio application made with respo
 
 Uses HTML and CSS to accomplish pleasing user interactions and allow scalable viewports.
 
-## Screenshot
+## Install Instructions
 
-![Portfolio Pro](https://faceless128.github.io/portfolio-pro/assets/images/screenshot.png)
+Clone this repo and edit it to suit your needs.
 
 ## Live Demonstration
 
 https://faceless128.github.io/portfolio-pro/
 
-## Install Instructions
+## Screenshot
 
-Clone this repo and edit it to suit your needs.
+![Portfolio Pro](https://faceless128.github.io/portfolio-pro/assets/images/screenshot.png)
