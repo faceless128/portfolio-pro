@@ -318,7 +318,7 @@ h2 {
         margin-bottom: 20px;
     }
     header ul {
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .hero {
         height: 200px;
